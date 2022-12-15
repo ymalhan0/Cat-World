@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Assignment 3 - Yukti Malhan</title>
+</head>
+
+
+<body onload="main()">
+
+  <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+  </canvas>
+
+  <p id="numdot"> XXX </p>
+  <p style="padding: 9px; border: 2px solid rgba(54, 167, 159, 0.568);">Woah! Looks like kitty had a friend over to
+    plant more flowers, lets check it out!</p>
+  <p>
+
+    <b>Controls: </b>W = forward | S = back | A = left | D = right | Q = pan left | E = pan right
+  <p><i> <b>Scroll to zoom in/out, Move camera by dragging canvas with mouse</i></b></p>
+
+
+  Animation:
+  <button type="button" id="on">ON</button>
+  <button type="button" id="off">OFF</button>
+  <p>
+    Rotate X <input type="range" min="-180" max="180" value="-180" class="slider" id="angleSlide">
+  <p>
+    Move Legs:
+  <p></p>
+  Front Left <input type="range" min="-25" max="25" value="0" class="slider" id="frontLeft">
+  Front Right <input type="range" min="-25" max="25" value="0" class="slider" id="frontRight">
+  <p></p>
+  Back Left <input type="range" min="-10" max="10" value="0" class="slider" id="backLeft">
+  Back Right <input type="range" min="-10" max="10" value="0" class="slider" id="backRight">
+  <p>
+    Move Tail:
+  <p></p>
+  Base <input type="range" min="-10" max="10" value="0" class="slider" id="base">
+  Middle <input type="range" min="-20" max="20" value="0" class="slider" id="middle">
+  Tip <input type="range" min="-10" max="10" value="0" class="slider" id="tip">
+
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix-cse160 copy.js"></script>
+
+  <script src="Triangle.js"></script>
+  <script src="Cube.js"></script>
+  <script src="Cone.js"></script>
+  <script src="asgn3.js"></script>
+  <script src="Camera.js"></script>
+
+
+
+</body>
+
+</html>
